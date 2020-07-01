@@ -1,0 +1,54 @@
+
+.wrap-filter {
+    position: absolute;
+    width: 93%;
+    margin-left: 10px;
+    top: 125px;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 500px;
+    
+}
+
+$cyan:hsl(180, 29%, 50%);
+$background: hsl(180, 52%, 96%);
+$cyan:hsl(180, 29%, 50%);
+$cyanDark: hsl(180, 14%, 20%);
+
+.tag-filter{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 10px 5px 10px;
+    background-color: $background;
+    margin-left: 10px;
+    padding-right: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    .text {
+        color: $cyan;
+    }
+    .button {
+        background-color: $cyan;
+        color: white;
+        height: 40px;
+        width: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+
+        span{
+            position: absolute;
+            top: 7px;
+            left: 8px;
+        }
+    }
+    .button:hover{
+        background-color: $cyanDark;
+    }
+}

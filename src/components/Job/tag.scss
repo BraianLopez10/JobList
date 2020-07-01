@@ -1,0 +1,12 @@
+$cyan:hsl(180, 29%, 50%);
+$background: hsl(180, 52%, 96%);
+
+.tag {
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 10px 5px 10px;
+    margin-left: 0;
+    cursor: pointer;
+    background-color: $background;
+    color: $cyan;
+}
