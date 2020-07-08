@@ -13,9 +13,9 @@ export const Job = ({ job }) => {
                     <div className="company">
                         <h4>{job.company}</h4>
                     </div>
-                    <div className="features-new">
-                        {job.new && (<div className="new">New!</div>)}
-                        {job.featured && (<div className="featured">Featured</div>)}
+                    <div className="features">
+                        {job.new && (<div className="new"><h5>New!</h5></div>)}
+                        {job.featured && (<div className="featured"><h5>Featured</h5></div>)}
                     </div>
                 </div>
                 <div className="position">

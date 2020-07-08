@@ -1,15 +1,16 @@
 
 .wrap-filter {
-    position: absolute;
-    width: 93%;
+    
+    position: relative;
+    margin-top: -60px;
     margin-left: 10px;
-    top: 125px;
+    margin-right: 10px;
+    border-radius: 10px;
     z-index: 999;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 500px;
     
 }
 

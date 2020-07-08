@@ -3,8 +3,10 @@ import React from 'react'
 import './index.scss';
 import { useJobs } from '../../context';
 
-export const Filter = ({ filters }) => {
+export const Filter = () => {
     const jobContext = useJobs();
+
+    const filters = jobContext.filters;
 
     return (
         <React.Fragment>
@@ -13,17 +15,23 @@ export const Filter = ({ filters }) => {
                 {filters.map((f, index) => {
                     return <TagFilter text={f} key={index}></TagFilter>
                 })}
+
                 {
-                    filters.length > 0 && (<div onClick={() => { jobContext.clear() }} style={{ position: "absolute", right: "5px", top: "5px", color: "hsl(180, 29%, 50%)", cursor: "pointer" }}>
-                        Clear
-                    </div>)
+                    filters.length > 0 &&
+                    <ButtonClear jobContext={jobContext}></ButtonClear>
                 }
             </div>
-
         </React.Fragment>
     )
 }
 
+const ButtonClear = ({ jobContext }) => {
+    return (
+        <div onClick={() => { jobContext.clear() }} style={{ position: "absolute", right: "5px", color: "hsl(180, 29%, 50%)", cursor: "pointer" }}>
+            Clear
+        </div>
+    )
+}
 
 const TagFilter = ({ text }) => {
     const jobContext = useJobs();
