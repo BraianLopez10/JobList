@@ -5,7 +5,7 @@ import './index.scss';
 export const Header = () => {
     return (
         <div className="header">
-            <img src="JobList/images/bg-header-mobile.svg" alt="background-header"></img>
+            <img src="images/bg-header-mobile.svg" alt="background-header"></img>
         </div>
     )
 }
